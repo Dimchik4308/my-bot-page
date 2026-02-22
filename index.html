@@ -112,11 +112,11 @@
 
         </main>
     </div>
-    <form id="form">
-        <h1>Оформлення щамовлення</h1>
-        <input type="text" placeholder="Введіть ім'я" id="username">
-        <input type="text" placeholder="Введіть прізвище" id="userlastname">
-        <input type="email" placeholder="Введіть email" id="useremail">
+    <form id="form" style="display: none">
+        <h1>Оформлення щамовлення</h1> <br>
+        <input type="text" placeholder="Введіть ім'я" id="username"> <br>
+        <input type="text" placeholder="Введіть прізвище" id="userlastname"> <br>
+        <input type="email" placeholder="Введіть email" id="useremail"> <br>
         <button id="order"> Оформити </button>
     </form>
     <footer class="main-footer">
@@ -161,7 +161,7 @@
        document.getElementById('username').value=tg.initDataUnsafe.user.first_name;
        document.getElementById('userlastname').value=tg.initDataUnsafe.user.last_name;
     });
-    order.addEventListener('click',() =>{
+    order.addEventListener('click',() => {
         tg.close();
     });
     </script>
