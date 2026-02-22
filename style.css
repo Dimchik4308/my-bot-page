@@ -7,7 +7,7 @@ body {
     padding: 0;
     background: var(--tg-theme-bg-color);
     font-family: 'Segoe UI', Arial, sans-serif;
-    color: var(--tg-theme-text-color);
+    color: #222222;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
