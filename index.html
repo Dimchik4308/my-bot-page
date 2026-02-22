@@ -109,9 +109,16 @@
                 </div>
 
             </div>
+
         </main>
     </div>
-
+    <form id="form">
+        <h1>Оформлення щамовлення</h1>
+        <input type="text" placeholder="Введіть ім'я" id="username">
+        <input type="text" placeholder="Введіть прізвище" id="userlastname">
+        <input type="email" placeholder="Введіть email" id="useremail">
+        <button id="order"> Оформити </button>
+    </form>
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-col">
@@ -141,6 +148,23 @@
         </div>
     </footer>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+    let tg=window.Telegram.WebApp;
+    let buy=document.getElementById('buy-btn');
+    let order=document.getElementById('order');
+    tg.expand();
+
+    buy.addEventListener('click', () => {
+       document.getElementById('sidebar').style.display='none' ;
+       document.getElementById('main').style.display='none';
+       document.getElementById('form').style.display='block';
+       document.getElementById('username').value=tg.initDataUnsafe.user.first_name;
+       document.getElementById('userlastname').value=tg.initDataUnsafe.user.last_name;
+    });
+    order.addEventListener('click',() =>{
+        tg.close();
+    });
+    </script>
 </body>
 <style>
 
