@@ -7,7 +7,7 @@ body {
     padding: 0;
     background: var(--tg-theme-bg-color);
     font-family: 'Segoe UI', Arial, sans-serif;
-    color: #e0e0e0;
+    color: var(--tg-theme-text-color);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@ html {
 }
 
 header {
-    background-color: #111;
+    background-color: var(--tg-theme-header-bg-color);
     border-bottom: 2px solid #ffcc00;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     position: sticky;
@@ -39,7 +39,7 @@ header {
 .name {
     font-size: 28px;
     text-decoration: none;
-    color: white;
+    color: var(--tg-theme-text-color);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -83,7 +83,7 @@ header {
 .sidebar {
     min-width: 280px;
     width: 280px;
-    background-color: #1a1a1a;
+    background-color: var(--tg-theme-section-bg-color);
     border: 1px solid #333;
     border-radius: 12px;
     padding: 20px;
@@ -105,7 +105,7 @@ header {
 .sidebar a {
     display: block;
     text-decoration: none;
-    color: #b0b0b0;
+    color: var(--tg-theme-text-color);
     font-size: 16px;
     padding: 15px;
     border-radius: 8px;
@@ -148,7 +148,7 @@ main {
 
 .product {
     width: calc(25% - 15px);
-    background-color: #252525;
+    background-color: var(--tg-theme-secondary-bg-color);
     border: 1px solid #333;
     border-radius: 12px;
     overflow: hidden;
@@ -226,7 +226,7 @@ main {
 }
 
 .main-footer {
-    background-color: #0f0f0f;
+    background-color: var(--tg-theme-bottom-bar-bg-color);
     border-top: 3px solid #ffcc00;
     color: #888;
     padding-top: 60px;
